@@ -7,8 +7,8 @@ export default class AssetServer {
     this.api = axios.create({
       baseURL: url,
       auth: {
-        username: "admin",
-        password: "testtest"
+        username: process.env.BASIC_AUTH_USER,
+        password: process.env.BASIC_AUTH_PASSWORD
       }
     })
     this.url = parse(url)

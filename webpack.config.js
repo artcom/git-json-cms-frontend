@@ -26,7 +26,9 @@ module.exports = (env = {}) => ({
   plugins: [
     new webpack.EnvironmentPlugin({
       GIT_JSON_API_URI: null,
-      ASSET_SERVER_URI: null
+      ASSET_SERVER_URI: null,
+      BASIC_AUTH_USER: null,
+      BASIC_AUTH_PASSWORD: null
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebpackPlugin({
