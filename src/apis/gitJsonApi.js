@@ -2,7 +2,13 @@ import axios from "axios"
 
 export default class GitJsonApi {
   constructor(url = "/content") {
-    this.api = axios.create({ baseURL: url })
+    this.api = axios.create({
+      baseURL: url,
+      auth: {
+        username: "admin",
+        password: "testtest"
+      }
+    })
   }
 
   async loadData(version = "master") {

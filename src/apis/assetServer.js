@@ -4,7 +4,13 @@ import { format, parse } from "url"
 
 export default class AssetServer {
   constructor(url = "/assets") {
-    this.api = axios.create({ baseURL: url })
+    this.api = axios.create({
+      baseURL: url,
+      auth: {
+        username: "admin",
+        password: "testtest"
+      }
+    })
     this.url = parse(url)
   }
 
