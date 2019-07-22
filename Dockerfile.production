@@ -15,7 +15,5 @@ ADD src /app/src
 
 RUN npm run build
 
-ADD public/index.html /app/public/index.html
-
 # start app
 CMD ["npm", "start"]
