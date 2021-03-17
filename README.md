@@ -1,3 +1,9 @@
+# Notice
+
+**The development of this project is continued in https://github.com/artcom/acms-ui.**
+
+**For the sake of backwards compatibility this repository is archived and set to read-only.**
+
 # CMS Frontend
 
 A frontend webapp which allows browsing/editing the json content served by the git-json-api service.
